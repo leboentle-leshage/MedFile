@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How MedFile Works | Revolutionizing Healthcare in South Africa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0072C6;
+            --secondary: #FF8200;
+            --accent: #00B4E4;
+            --dark: #1D2951;
+            --light: #F5F7FA;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        
+        .product-hero {
+            background: linear-gradient(rgba(0, 114, 198, 0.9), rgba(0, 114, 198, 0.9)), url('images/doctor-scanning-qr.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .step-card {
+            border-radius: 10px;
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tech-icon {
+            font-size: 2rem;
+            color: var(--primary);
+        }
+        
+        .demo-video {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/medfile-logo.png" alt="MedFile Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="product.html">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-light" href="#">Download App</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Hero -->
+    <section class="product-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">How MedFile Works</h1>
+                    <p class="lead mb-4">A simple, secure solution to South Africa's hospital registration challenges.</p>
+                    <a href="#" class="btn btn-light btn-lg px-4">Get Started Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Simple Setup, Lifesaving Results</h2>
+                <p class="lead text-muted">Get started with MedFile in just a few easy steps</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm step-card p-4">
+                        <div class="step-number mx-auto">1</div>
+                        <div class="card-body text-center">
+                            <h3 class="h4">Create Your Profile</h3>
+                            <p>Sign up via our app or website and enter your basic information, medical history, and any allergies or current medications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm step-card p-4">
+                        <div class="step-number mx-auto">2</div>
+                        <div class="card-body text-center">
+                            <h3 class="h4">Get Your QR Code</h3>
+                            <p>We generate a unique QR code that securely contains all your essential medical information in an encrypted format.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm step-card p-4">
+                        <div class="step-number mx-auto">3</div>
+                        <div class="card-body text-center">
+                            <h3 class="h4">Scan at Hospital</h3>
+                            <p>Present your QR code (digital or printed) at any participating hospital - they'll scan it to instantly access your details.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Video Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">See MedFile in Action</h2>
+                    <p class="lead">Watch how MedFile transforms the hospital registration process in under 30 seconds.</p>
+                    <p>Our solution works with any smartphone or can be printed for those without mobile devices - ensuring accessibility for all South Africans.</p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-primary btn-lg me-3">Download App</a>
+                        <a href="#" class="btn btn-outline-secondary btn-lg">Web Version</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="demo-video ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="MedFile Demo" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Your Data is Secure</h2>
+                    <p class="lead">We prioritize the privacy and security of your health information.</p>
+                    <p>MedFile uses military-grade encryption to protect your data. Your information is only accessible when you present your QR code to authorized healthcare providers.</p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-light btn-lg">Learn About Our Security</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="row text-center">
+                        <div class="col-6 mb-4">
+                            <div class="tech-icon mb-2">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h4>End-to-End Encryption</h4>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <div class="tech-icon mb-2">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>Secure Cloud Storage</h4>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <div class="tech-icon mb-2">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h4>HIPAA Compliant</h4>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <div class="tech-icon mb-2">
+                                <i class="fas fa-fingerprint"></i>
+                            </div>
+                            <h4>Biometric Access</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hospital Integration Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">For Hospitals & Clinics</h2>
+                <p class="lead text-muted">Implementing MedFile in your healthcare facility</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h3 class="h4 mb-4">Benefits for Healthcare Providers</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> <strong>Reduce intake time</strong> from 15+ minutes to under 30 seconds</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> <strong>Eliminate paperwork</strong> and manual data entry errors</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> <strong>Immediate access</strong> to critical patient information</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> <strong>Seamless integration</strong> with existing hospital systems</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-primary me-2"></i> <strong>Improved patient satisfaction</strong> and reduced wait times</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h3 class="h4 mb-4">Implementation Process</h3>
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item border-0 ps-0">Contact our team for a consultation</li>
+                                <li class="list-group-item border-0 ps-0">We assess your current intake system</li>
+                                <li class="list-group-item border-0 ps-0">Install QR scanners at registration points</li>
+                                <li class="list-group-item border-0 ps-0">Train staff on the MedFile system</li>
+                                <li class="list-group-item border-0 ps-0">Go live and start serving patients faster</li>
+                            </ol>
+                            <div class="mt-4">
+                                <a href="#" class="btn btn-primary">Request Hospital Information</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Frequently Asked Questions</h2>
+                <p class="lead text-muted">Common questions about MedFile</p>
+            </div>
+            
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Is MedFile only for private hospitals?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            No, MedFile is designed for all healthcare facilities in South Africa. We're working with both private and public hospitals, as well as clinics, to implement this system nationwide. Several provincial health departments have already expressed interest in rolling out MedFile across their facilities.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            What if I don't have a smartphone?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            MedFile is accessible to everyone. You can print your QR code on paper or get a durable plastic card version. Many participating hospitals and clinics also offer to print your QR code for you when you first register in person.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            How is my medical data protected?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We use industry-leading encryption to protect your data. Your information is stored securely in South Africa and is only accessible when your QR code is scanned by authorized healthcare providers. You maintain full control over your data and can revoke access at any time.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                            Can family members access my MedFile?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can designate family members or caregivers as authorized users who can access your MedFile in emergencies. This is particularly useful for elderly patients or those with chronic conditions who may need assistance managing their healthcare.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                            Is there a cost to use MedFile?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            The basic MedFile service is free for patients. Hospitals pay a small fee to implement the system, which is more than offset by the savings in administrative costs and improved efficiency. Some premium features may be available for a small subscription fee.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Ready to Experience Healthcare Without the Wait?</h2>
+            <p class="lead mb-5">Create your MedFile profile today - it takes less than 5 minutes</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="btn btn-light btn-lg px-4">Sign Up Now</a>
+                <a href="index.html#contact" class="btn btn-outline-light btn-lg px-4">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/medfile-logo-white.png" alt="MedFile Logo" height="40">
+                    <p class="mt-2 mb-0">Proudly South African innovation improving healthcare nationwide.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2023 MedFile. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
