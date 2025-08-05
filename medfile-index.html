@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedFile | Revolutionizing Healthcare in South Africa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0072C6;
+            --secondary: #FF8200;
+            --accent: #00B4E4;
+            --dark: #1D2951;
+            --light: #F5F7FA;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 120px 0;
+        }
+        
+        .sa-flag-theme {
+            border-top: 5px solid #007749; /* Green */
+            border-bottom: 5px solid #000; /* Black */
+            background-color: #FFB81C; /* Gold */
+            padding: 15px 0;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-card {
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .qr-showcase {
+            background-color: var(--light);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+        }
+        
+        .grayscale {
+            filter: grayscale(100%);
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+        
+        .grayscale:hover {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://i.imgur.com/JzKjz7W.png" alt="MedFile Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-light" href="#">Download App</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <img src="https://i.imgur.com/JzKjz7W.png" alt="MedFile Logo" height="80" class="mb-4">
+            <h1 class="display-4 fw-bold mb-4">Ending Hospital Queues in South Africa</h1>
+            <p class="lead mb-5">MedFile digitizes patient registration with secure QR codes, saving lives by reducing waiting times in our hospitals.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="product.html" class="btn btn-primary btn-lg px-4">Learn More</a>
+                <a href="#" class="btn btn-outline-light btn-lg px-4">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- South African Impact Banner -->
+    <section class="sa-flag-theme text-center py-3">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center">
+                <img src="https://i.imgur.com/ZYwDk9X.png" alt="South African Flag" height="30" class="me-3">
+                <h3 class="mb-0">Proudly South African Innovation Improving Healthcare Nationwide</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <img src="https://i.imgur.com/9zQ7W7T.png" alt="Clock Icon" height="60" class="mb-3">
+                    <h2 class="display-4 fw-bold text-primary">85%</h2>
+                    <p class="lead">Reduction in registration time</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://i.imgur.com/5XwQz9T.png" alt="Hospital Icon" height="60" class="mb-3">
+                    <h2 class="display-4 fw-bold text-primary">50+</h2>
+                    <p class="lead">Hospitals using MedFile</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://i.imgur.com/3Q7W9zT.png" alt="Patients Icon" height="60" class="mb-3">
+                    <h2 class="display-4 fw-bold text-primary">250k+</h2>
+                    <p class="lead">Patients registered</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://i.imgur.com/7W9zQ3T.png" alt="Happy Icon" height="60" class="mb-3">
+                    <h2 class="display-4 fw-bold text-primary">9/10</h2>
+                    <p class="lead">Patient satisfaction rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">How MedFile Transforms Healthcare</h2>
+                <p class="lead text-muted">Designed specifically for South Africa's healthcare challenges</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center p-4 h-100">
+                        <img src="https://i.imgur.com/9zQ7W7T.png" alt="No Waiting" height="80" class="mb-3">
+                        <h3>No More Waiting</h3>
+                        <p>Patients skip the long queues by having their details ready via QR code, getting treated faster in emergencies.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4 h-100">
+                        <img src="https://i.imgur.com/5XwQz9T.png" alt="Secure Data" height="80" class="mb-3">
+                        <h3>Secure Data</h3>
+                        <p>Your medical history is stored securely with encryption, only accessible when you present your QR code.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4 h-100">
+                        <img src="https://i.imgur.com/3Q7W9zT.png" alt="Critical Alerts" height="80" class="mb-3">
+                        <h3>Critical Alerts</h3>
+                        <p>Doctors immediately see allergies, current medications, and past operations for safer treatment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QR Showcase Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">Your Health in a QR Code</h2>
+                    <p class="lead mb-4">MedFile generates a unique QR code that contains all your essential medical information in a secure, scannable format.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle me-2"></i> No more filling forms at each hospital visit</li>
+                        <li class="mb-2"><i class="fas fa-check-circle me-2"></i> Emergency access even without internet</li>
+                        <li class="mb-2"><i class="fas fa-check-circle me-2"></i> Works with any smartphone or printed copy</li>
+                    </ul>
+                    <a href="product.html" class="btn btn-light btn-lg mt-3">See How It Works</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="qr-showcase d-inline-block">
+                        <img src="https://i.imgur.com/7W9zQ3T.png" alt="Sample MedFile QR Code" class="img-fluid" style="max-width: 250px;">
+                        <p class="mt-3 text-dark">Scan this demo QR with your phone</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Trusted by South Africans</h2>
+                <p class="lead text-muted">Hear from those who've experienced the MedFile difference</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 testimonial-card">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <img src="https://i.imgur.com/9zQ7W7T.png" alt="Thandi Nkosi" class="rounded-circle" width="100">
+                            </div>
+                            <p class="card-text">"When my father had a stroke, MedFile saved precious minutes at Groote Schuur Hospital. The doctors knew his history immediately."</p>
+                            <div class="text-center mt-3">
+                                <h6 class="mb-0">Thandi Nkosi</h6>
+                                <small class="text-muted">Cape Town</small>
+                                <div class="mt-2 text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 testimonial-card">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <img src="https://i.imgur.com/5XwQz9T.png" alt="Sipho Mthembu" class="rounded-circle" width="100">
+                            </div>
+                            <p class="card-text">"As a nurse at Chris Hani Baragwanath, MedFile has transformed our intake process. We can focus on care, not paperwork."</p>
+                            <div class="text-center mt-3">
+                                <h6 class="mb-0">Sipho Mthembu</h6>
+                                <small class="text-muted">Johannesburg</small>
+                                <div class="mt-2 text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 testimonial-card">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <img src="https://i.imgur.com/3Q7W9zT.png" alt="Anika Patel" class="rounded-circle" width="100">
+                            </div>
+                            <p class="card-text">"With my diabetes, I visit clinics often. MedFile means no more repeating my medical history each time. A game-changer!"</p>
+                            <div class="text-center mt-3">
+                                <h6 class="mb-0">Anika Patel</h6>
+                                <small class="text-muted">Durban</small>
+                                <div class="mt-2 text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hospital Partners Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Partnering with Leading South African Hospitals</h2>
+                <p class="lead text-muted">MedFile is being adopted across the country</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center align-items-center">
+                <div class="col-6 col-md-2">
+                    <img src="https://i.imgur.com/9zQ7W7T.png" alt="Hospital Partner" class="img-fluid grayscale">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="https://i.imgur.com/5XwQz9T.png" alt="Hospital Partner" class="img-fluid grayscale">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="https://i.imgur.com/3Q7W9zT.png" alt="Hospital Partner" class="img-fluid grayscale">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="https://i.imgur.com/7W9zQ3T.png" alt="Hospital Partner" class="img-fluid grayscale">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="https://i.imgur.com/ZYwDk9X.png" alt="Hospital Partner" class="img-fluid grayscale">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Ready to Transform Your Healthcare Experience?</h2>
+            <p class="lead mb-5">Join thousands of South Africans saving time and potentially lives with MedFile</p>
+            <a href="#" class="btn btn-primary btn-lg px-5">Create Your MedFile Now</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">Get In Touch</h2>
+                    <p class="lead">Have questions about MedFile? We're here to help.</p>
+                    
+                    <div class="mt-5">
+                        <h5><i class="fas fa-map-marker-alt text-primary me-2"></i> Johannesburg, South Africa</h5>
+                        <h5 class="mt-3"><i class="fas fa-phone-alt text-primary me-2"></i> +27 11 123 4567</h5>
+                        <h5 class="mt-3"><i class="fas fa-envelope text-primary me-2"></i> info@medfile.co.za</h5>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <h5 class="mb-3">Follow Us</h5>
+                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-lg" placeholder="Email Address">
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control form-control-lg" placeholder="Phone Number">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control form-control-lg" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://i.imgur.com/JzKjz7W.png" alt="MedFile Logo" height="40">
+                    <p class="mt-2 mb-0">Proudly South African innovation improving healthcare nationwide.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy; 2025 MedFile. Created by Olebogeng Leshage. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
